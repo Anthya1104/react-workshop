@@ -1,4 +1,9 @@
 let total = document.getElementById('total');
-total.addEventListener('click', function () {
-  this.innerText = parseInt(this.innerText) + 1;
+let add = document.getElementById('add');
+let sub = document.getElementById('sub');
+add.addEventListener('click', function () {
+  total.innerText = parseInt(total.innerText) + 1;
+});
+sub.addEventListener('click', function () {
+  total.innerText = parseInt(total.innerText) - 1;
 });
